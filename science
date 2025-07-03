@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>โครงการวิทยาศาสตร์ยุคใหม่</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to bottom, #0f0f1e, #000000);
+      color: #00fff7;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 0 10px #00ffe7;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      color: #00ffe7;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+      background: url('https://images.unsplash.com/photo-1581092334904-9067fa3f96e1?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      text-align: center;
+      color: #00ffe7;
+      padding: 1rem;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #00ffe7;
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h3 {
+      font-size: 1.8rem;
+      border-left: 5px solid #00ffe7;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      margin: 1rem 0;
+      border-left: 3px solid #00ffe7;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateX(10px);
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    footer {
+      background: #000000;
+      color: #aaa;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 1rem;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      section h3 {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h2 {
+        font-size: 1.5rem;
+      }
+
+      header h1 {
+        font-size: 1.2rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SCI NEXT</h1>
+    <nav>
+      <a href="#about">เกี่ยวกับ</a>
+      <a href="#projects">โครงการ</a>
+      <a href="#contact">ติดต่อ</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>นวัตกรรมวิทยาศาสตร์เพื่ออนาคต</h2>
+  </section>
+
+  <section id="about">
+    <h3>เกี่ยวกับโครงการ</h3>
+    <p>
+      SCI NEXT คือโครงการที่รวบรวมงานวิทยาศาสตร์สมัยใหม่ เน้นการผสาน AI, IoT, พลังงานสะอาด และนวัตกรรมชีวภาพ เพื่อสร้างสรรค์โลกอนาคตให้ยั่งยืนและชาญฉลาด
+    </p>
+  </section>
+
+  <section id="projects">
+    <h3>ตัวอย่างโครงการ</h3>
+
+    <div class="card">
+      <h4>🌱 BioGreen Lab</h4>
+      <p>ระบบปลูกพืชแนวตั้งที่ใช้ AI ควบคุมอุณหภูมิ น้ำ และแสงแบบอัตโนมัติ</p>
+    </div>
+
+    <div class="card">
+      <h4>🔥 FireGuard AI</h4>
+      <p>ตรวจจับควันและไฟโดยใช้เซนเซอร์ IoT และการประมวลผลภาพจากกล้อง AI</p>
+    </div>
+
+    <div class="card">
+      <h4>🚀 AstroBot Explorer</h4>
+      <p>หุ่นยนต์สำรวจพื้นผิวดาวเคราะห์จำลอง พร้อมระบบเซ็นเซอร์ตรวจวัดสภาพแวดล้อม</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>ติดต่อเรา</h3>
+    <p>📧 อีเมล: <a href="mailto:scinextteam@gmail.com" style="color:#00ffe7;">scinextteam@gmail.com</a></p>
+    <p>📱 Instagram: <a href="https://instagram.com/scinext" target="_blank" style="color:#00ffe7;">@scinext</a></p>
+  </section>
+
+  <footer>
+    © 2025 SCI NEXT | พัฒนาโดยทีมวิทย์สายอนาคต
+  </footer>
+
+</body>
+</html>
